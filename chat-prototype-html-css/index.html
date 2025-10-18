@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Assistant - Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-$END$
+<main class="chat-container">
+    <header class="chat-header">
+        <h1>Chat Assistant</h1>
+        <p>Prototype: Pure HTML/CSS (Static)</p>
+    </header>
+
+    <section class="chat-history">
+        <div class="message bot">
+            <div class="bubble">Hello! I'm here to chat with you. How can I help you today?</div>
+        </div>
+
+        <div class="message user">
+            <div class="bubble">Hi there! What can you do?</div>
+        </div>
+
+        <div class="message bot">
+            <div class="bubble">I can chat with you about various topics. Try asking me a question or just say hello!</div>
+        </div>
+
+        <div class="message user">
+            <div class="bubble">How does this work?</div>
+        </div>
+
+        <div class="message bot">
+            <div class="bubble">That’s a great question! In this version, I’m just a static example built with HTML and CSS.</div>
+        </div>
+    </section>
+
+    <form class="chat-input">
+        <input type="text" placeholder="Type a message..." disabled />
+        <button type="submit" disabled>Send</button>
+    </form>
+
+    <footer class="chat-footer">
+        <p>ℹ️This is a static HTML/CSS demonstration. The input is disabled. See other approaches for interactive versions.</p>
+    </footer>
+</main>
 </body>
 </html>

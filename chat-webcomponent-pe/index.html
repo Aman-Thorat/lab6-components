@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chat – Web Component (PE)</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-$END$
+<simple-chat>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>ChatBot</h1>
+        </header>
+
+        <div class="messages">
+            <div class="message bot">Hello! How can I help you?</div>
+        </div>
+
+        <form class="input-area">
+            <input type="text" placeholder="Type a message..." aria-label="Message input" />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</simple-chat>
+
+<script type="module" src="eliza.js"></script>
+<script type="module" src="chat-component.js"></script>
 </body>
 </html>

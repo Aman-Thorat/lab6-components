@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Component</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- I have divitis. I am sorry it is just the way I code! I can't think another way unless needed too !-->
+
+<div class="main-container">
+    <h1>Chat Component</h1>
+
+    <div class="card-grid">
+
+        <!-- Pure HTML & CSS -->
+        <div class="card">
+            <span class="badge" style="background-color: grey">Prototype</span>
+            <h2>Pure HTML & CSS</h2>
+            <p>
+                A static mockup using only HTML and CSS to work out the interface design.
+            </p>
+            <ul>
+                <li>&check; No dependencies</li>
+                <li>&check; Always accessible</li>
+                <li>&check; Simple to understand</li>
+                <li>&check; No interactivity</li>
+            </ul>
+            <a href="chat-prototype-html-css/index.html" class="demo-link">View Demo →</a>
+        </div>
+
+        <!-- DOM Manipulation-->
+        <div class="card">
+            <span class="badge" style="background-color: red">Approach 1</span>
+            <h2>DOM Manipulation</h2>
+            <p>
+                Interactive chat using vanilla JavaScript and standard DOM methods.
+            </p>
+            <ul>
+                <li>&check; Full interactivity</li>
+                <li>&check; Eliza-style bot</li>
+                <li>&check; Standard JavaScript</li>
+                <li>&check; No encapsulation</li>
+            </ul>
+            <a href="chat-dom/index.html" class="demo-link">View Demo →</a>
+        </div>
+
+        <!-- Progressive Enhancement-->
+        <div class="card">
+            <span class="badge" style="background-color: orange">Approach 2</span>
+            <h2>Progressive Enhancement</h2>
+            <p>
+                Custom element that enhances existing HTML markup with JavaScript.
+            </p>
+            <ul>
+                <li>&check; Graceful degradation</li>
+                <li>&check; Semantic base HTML</li>
+                <li>&check; Web Components API</li>
+                <li>&check; Global styles</li>
+            </ul>
+            <a href="chat-webcomponent-pe/index.html" class="demo-link">View Demo →</a>
+        </div>
+
+        <!-- Web Component-->
+        <div class="card">
+            <span class="badge" style="background-color: deeppink">Approach 3</span>
+            <h2>Web Component</h2>
+            <p>
+                Fully encapsulated custom element with Shadow DOM and internal styles.
+            </p>
+            <ul>
+                <li>&check; Complete encapsulation</li>
+                <li>&check; Shadow DOM</li>
+                <li>&check; Self-contained</li>
+                <li>&check; Highly reusable</li>
+            </ul>
+            <a href="chat-webcomponent-gd/index.html" class="demo-link">View Demo →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

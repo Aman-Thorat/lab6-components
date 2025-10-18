@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, blueviolet, darkslateblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 380px;
+    height: 600px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px black;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 16px;
+    max-width: 75%;
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.message.user {
+    background-color: dodgerblue;
+    color: white;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: lightgray;
+    color: black;
+    align-self: flex-start;
+}
+
+.input-area {
+    display: flex;
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+    background-color: white;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 8px 8px;
+    border: 1px solid antiquewhite;
+    border-radius: 16px;
+    outline: none;
+    font-size: 13px;
+}
+
+.input-area button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 0 15px;
+    margin-left: 13px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
+}
+
+.input-area button:hover {
+    background-color: darkblue;
+}

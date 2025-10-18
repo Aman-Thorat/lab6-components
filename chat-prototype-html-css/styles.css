@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, blueviolet, darkslateblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background: white;
+    width: 380px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.chat-header h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.chat-header p {
+    font-size: 13px;
+}
+
+/* Chat history */
+.chat-history {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Messages */
+.message {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.message.bot {
+    flex-direction: row;
+}
+
+.message.user {
+    flex-direction: row-reverse;
+}
+
+.bubble {
+    padding: 10px 15px;
+    border-radius: 16px;
+    max-width: 70%;
+    line-height: 20px;
+    box-shadow: 0 2px 5px black;
+}
+
+.bot .bubble {
+    background-color: whitesmoke;
+    color: dimgrey;
+}
+
+.user .bubble {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid whitesmoke;
+    padding: 15px;
+    background: white;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: 1px solid antiquewhite;
+    font-size: 15px;
+    outline: none;
+    color: grey;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: dimgrey;
+    color: white;
+    font-weight: 800;
+    cursor: not-allowed;
+}
+
+.chat-footer {
+    background-color: lightgoldenrodyellow;
+    border-top: 1px solid yellow;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #444;
+}
+
